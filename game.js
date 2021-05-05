@@ -25,7 +25,7 @@ $(".btn").click(function() {
 
 //detects keypress to start game
 $(document).keydown(function() {
-  if (started) {
+  if (!started) {
 
     $("#level-title").text(`Level ${level}!`);
     nextSequence();
